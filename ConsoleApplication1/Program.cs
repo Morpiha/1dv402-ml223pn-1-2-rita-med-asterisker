@@ -12,7 +12,23 @@ namespace ConsoleApplication1
         {
             for (int i = 0; i < 25; i++)
             {
-         
+                int rowColor = i % 3;
+                switch (rowColor)
+                {
+                    case 0:
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        break;
+                    
+                    case 1:
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        break;
+
+                    case 2:
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        break;
+                        
+                        
+                }
                 for (int j = 0; j < 39; j++)
                 {
                     Console.Write("* ");
